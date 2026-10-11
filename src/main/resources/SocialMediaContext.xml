@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    scope shud be singleton & prototype -->
+    <bean id="simplepost" class="com.example.firstproject.SocialMedia.SimplePost" scope="prototype"></bean>
+    <bean id="simplepostlist" class="com.example.firstproject.SocialMedia.SimplePostList">
+<!--        <property name="post" ref="simplepost"></property>-->
+    </bean>
+
+    <bean id="simpleuser" class="com.example.firstproject.SocialMedia.SimpleUser" init-method="init" destroy-method="destroy">
+        <property name="postList" ref="simplepostlist" ></property>
+    </bean>
+</beans>

@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.util.Scanner;
 
-@SpringBootApplication
+//@SpringBootApplication
 public class LaptopDealer {
     public static void main(String[] args) {
         SpringApplication.run(LaptopDealer.class, args);

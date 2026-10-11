@@ -1,3 +1,7 @@
 spring:
   application:
     name: firstProject
+  mvc:
+    view:
+      prefix: /WEB-INF/Views/
+      suffix: .jsp

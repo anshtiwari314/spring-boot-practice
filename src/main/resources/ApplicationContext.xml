@@ -4,20 +4,23 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-     <bean id="hyundai" class="com.example.firstproject.Cars.Hyundai" ></bean>
+<!--     <bean id="hyundai" class="com.example.firstproject.Cars.Hyundai" ></bean>-->
 
      <bean id="i3" class="com.example.firstproject.Laptops.i3"></bean>
      <bean id="i5" class="com.example.firstproject.Laptops.i5"></bean>
      <bean id="i7" class="com.example.firstproject.Laptops.i7"></bean>
 
      <bean id="dellwithi3" class="com.example.firstproject.Laptops.Dell">
-          <constructor-arg ref="i3"></constructor-arg>
+<!--          <constructor-arg ref="i3"></constructor-arg>-->
+          <property name="processors" ref="i3"></property>
      </bean>
      <bean id="dellwithi5" class="com.example.firstproject.Laptops.Dell">
-          <constructor-arg ref="i5"></constructor-arg>
+<!--          <constructor-arg ref="i5"></constructor-arg>-->
+          <property name="processors" ref="i5"></property>
      </bean>
      <bean id="dellwithi7" class="com.example.firstproject.Laptops.Dell">
-          <constructor-arg ref="i7"></constructor-arg>
+<!--          <constructor-arg ref="i7"></constructor-arg>-->
+          <property name="processors" ref="i7"></property>
      </bean>
 
      <bean id="hpwithi3" class="com.example.firstproject.Laptops.HP">
