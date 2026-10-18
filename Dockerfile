@@ -24,7 +24,7 @@ RUN gradle bootJar --no-daemon
 # =========================================================================
 # STAGE 2: Run the application inside a lightweight JRE environment
 # =========================================================================
-FROM openjdk:17-jdk-slim
+FROM eclipse-temurin:17-jre-headless
 WORKDIR /app
 
 # Copy the compiled executable JAR file away from the heavy Gradle build stage
