@@ -5,3 +5,20 @@ spring:
     view:
       prefix: /WEB-INF/Views/
       suffix: .jsp
+  datasource:
+    url: jdbc:mysql://192.168.1.36:3306/first_db
+    username: root
+    password: anuj
+    driver-class-name:
+  jpa:
+    # 1. Automatic Table Management
+    hibernate:
+      ddl-auto: update
+    # 2. Database dialect communication
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect # Use this for Spring Boot 3.x+
+        format_sql: true
+    # 3. Debugging logs
+    show-sql: true # Prints the raw SQL queries executed by Hibernate into your console terminal
+

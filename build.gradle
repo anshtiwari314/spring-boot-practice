@@ -23,6 +23,22 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
+    implementation 'redis.clients:jedis:7.2.0'
+    // 1. Spring Data JPA (Includes Hibernate and Jakarta Persistence)
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+    // 2. MySQL Driver (Allows Java to communicate with your MySQL database)
+    runtimeOnly 'com.mysql:mysql-connector-j'
+
+    // Lombok Dependencies
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+
+    // Allows Lombok to run inside your test suites as well
+    testCompileOnly 'org.projectlombok:lombok'
+    testAnnotationProcessor 'org.projectlombok:lombok'
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 }
 
 tasks.named('test') {

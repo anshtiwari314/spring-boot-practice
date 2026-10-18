@@ -7,7 +7,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.util.Scanner;
 
-//@SpringBootApplication
+@SpringBootApplication
 public class SocialMediaApp {
     public static void main(String[] args) {
         SpringApplication.run(SocialMediaApp.class, args);
