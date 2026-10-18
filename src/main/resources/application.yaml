@@ -6,7 +6,7 @@ spring:
       prefix: /WEB-INF/Views/
       suffix: .jsp
   datasource:
-    url: jdbc:mysql://192.168.1.36:3306/first_db
+    url: jdbc:mysql://localhost:5246/first_db
     username: root
     password: anuj
     driver-class-name:

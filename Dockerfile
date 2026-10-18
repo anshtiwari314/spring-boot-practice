@@ -11,7 +11,6 @@ COPY build.gradle settings.gradle ./
 RUN mkdir -p src/main/java/com/example/firstproject/
 
 # 3. SELECTIVE COPYING: Copy ONLY the specific sub-directories you want to keep
-# (Replace 'Todo' with the names of the folder directories you want to include)
 COPY src/main/java/com/example/firstproject/Todo/ ./src/main/java/com/example/firstproject/Todo/
 # COPY src/main/java/com/example/firstproject/AnotherDir/ ./src/main/java/com/example/firstproject/AnotherDir/
 
